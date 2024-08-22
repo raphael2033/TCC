@@ -1,2 +1,2 @@
 # TCC
-tcc da escola diva, grupo Cauan,Leonardo,Bruno,Raphael
+tcc da escola diva, grupo Cauan,Leonardo,Bruno,Raphael e João
