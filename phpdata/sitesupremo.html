@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<body>
+<html>
+    <head>
+<meta charset="utf-8">
+<link rel="stylesheet"  type="css/html" href="tintasecante.html">
+    </head>
+<title> Super site do Raphael</title>
+<div class="sites"> 
+     
+     <article class="anuncio2"></article>
+     <BR></BR>
+    <aside class="anuncio"></aside>
+    <center>
+<header></header></center>
+<center><nav id="menu">
+    <div class="infobox"><a class="link1" href="galeria.html">galeria de artes</a> Informações sobre Galeria de Artes</div>
+
+    <a class="link1" href="galeria.html">galeria de artes</a>
+    <div class="infobox"><a class="link1" href="galeria.html">galeria de artes</a> Informações sobre Galeria de Artes</div>
+<a class="link2" href="site1.html">louja</a>
+<div class="infobox"><a class="link2" href="site1.html">galeria de artes</a> Informações sobre Galeria de Artes</div>
+<a class="link3" href="site2.htm"target="_blank">curriculo</a>
+<div class="infobox"><a class="link3" href="site2.htm">galeria de artes</a> Informações sobre Galeria de Artes</div>
+   <a class="link3" href="prova7.htm">Calendario</a>
+   <div class="infobox"><a class="link3" href="prova7.htm">galeria de artes</a> Informações sobre Galeria de Artes</div>
+   <a class="link5" href="paragrafos.html" target="_blank">exemplos</a>
+   <div class="infobox"><a class="link5" href="paragrafos.html">galeria de artes</a> Informações sobre Galeria de Artes</div>
+  <a class="yt" href="https://www.youtube.com/channel/UC2oHEK9OXGUj1FFfaujbuRA" target="_blank"> meu canal</a>
+  <div class="infobox"><a class="yt" href="https://www.youtube.com/channel/UC2oHEK9OXGUj1FFfaujbuRA">galeria de artes</a> Informações sobre Galeria de Artes</div>
+  <a class="mamematica" href="matematica.html" target="_blank"> matematica</a>
+  <div class="infobox"><a class="mamematica" href="matematica.html">galeria de artes</a> Informações sobre Galeria de Artes</div>
+      </div>
+      
+</nav></center>
+<aside class="aside1">HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo</aside>
+<iframe width="600" height="375" src="https://www.youtube.com/embed/XdmNTsy80uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</iframe><article class="article1">Css ouCascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags "style". Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.</article>
+<script>
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all menu items with the class 'infobox'
+      var menuItems = document.querySelectorAll('.infobox');
+  
+      // Loop through each menu item
+      menuItems.forEach(function (menuItem) {
+        // Set up a mouseover event listener
+        menuItem.addEventListener('mouseover', function () {
+          // Display the infobox when the mouse is over the menu item
+          this.style.display = 'block';
+        });
+  
+        // Set up a mouseout event listener
+        menuItem.addEventListener('mouseout', function () {
+          // Hide the infobox when the mouse leaves the menu item
+          this.style.display = 'none';
+        });
+      });
+    });
+  </script>
+  
+<style>
+
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+      position: relative;
+    }
+
+    .infobox {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul li:hover .infobox {
+      display: block;
+    }
+  </style>
+<ul class="lista"><table>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</table></ul>
+<center>
+<section class="slider">
+    <input name='slide' type="radio" checked> 
+    <input name='slide' type="radio" >
+    <input name='slide' type="radio">
+    <input name='slide' type="radio">
+    <div class="slider-content">
+        <div class="slider-item"><P>Site feito por Raphael Salvador Elias</P></div>
+        <div class="slider-item"><P>Usando visual studio code</P></div>
+        <div class="slider-item"><P>O code usa html e css como tambem javascript e logo logo kotlin tambem</P></div>
+        <div class="slider-item"><center><img class="cachorro" src="dog.jpg"></center></div>
+    </div>
+</section>
+</center>
+
+<style>
+    .anuncio {
+       
+    }
+    .anuncio2 {
+
+    }
+    .cachorro {
+        width: 30%;
+        height: 80px;
+        text-align: center;
+    }
+    p {
+        background-color:grey;
+        width: 100px;
+        margin-top: 10px;
+        border: 1px solid black;
+border-radius: 10px;
+        padding-bottom: 27px;
+        margin-bottom: 10px ;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+    .slider{
+    overflow: hidden;
+
+}
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+
+}
+ 
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+    .sites {
+background-color: rgb(100, 100, 99);
+margin:auto;
+font-size: 30px;
+width: 800px;
+margin-top: 10px;
+
+
+    }
+    iframe {
+        margin-left: 630px;
+        border-radius: 4px black;
+        margin-top:60px;
+
+
+
+
+
+    }
+    nav ul li a {
+color: #e26565;
+padding: 20px;
+display: inline-block;
+text-decoration: none;
+transition: background .4s;
+}
+    .yt {
+
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }
+    .link1{
+transition: background 4s ;
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }   
+    .link5{
+transition: background 4s ;
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }   
+    .link5:hover {
+transition: background .4s ;
+background-color:blue;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    } 
+    .link1:hover {
+transition: background .4s ;
+background-color:blue;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    } 
+    .link2{
+transition: background 4s ;
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }   
+    .link2:hover {
+transition: background .4s ;
+background-color:blue;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    } 
+    .link3{
+transition: background 4s ;
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }   
+    .link3:hover {
+transition: background .4s ;
+background-color:blue;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    } 
+    .link4{
+transition: background 4s ;
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }   
+    .yt{
+transition: background 4s ;
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }   
+    .yt:hover {
+transition: background .4s ;
+background-color:blue;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    } 
+    .mamematica{
+transition: background 4s ;
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }   
+    .mamematica:hover {
+transition: background .4s ;
+background-color:blue;
+
+    } 
+    .link4:hover {
+transition: background .4s ;
+background-color:blue;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    } 
+     .mamematica{
+
+background-color:grey;
+color: black;
+margin-top: 30px;
+padding-bottom: 27px;
+text-decoration: none;
+margin-top: 3px;
+border: 1px solid black;
+border-radius: 10px;
+    }
+    .link5 {
+
+        background-color:grey;
+        margin-top: 10px;
+    
+        padding-top: 0px;
+        padding-bottom: 27px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+border-radius: 10px;
+    }
+    .link2 {
+
+        background-color:grey;
+        margin-top: 10px;
+    
+        padding-top: 0px;
+        padding-bottom: 27px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+border-radius: 10px;
+    }
+    .link3 {
+   
+        background-color:grey;
+        margin-top: 10px;
+        border: 1px solid black;
+border-radius: 10px;
+        padding-bottom: 27px;
+        color: black;
+        text-decoration: none;
+    }
+    .link4 {
+    
+        background-color:grey;
+        margin-top: 10px;
+        padding-bottom: 27px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+border-radius: 10px;
+    }
+    header {
+background-image: url(banner.png) ;
+background-color: red;
+width: 80%;
+height: 200px;
+opacity: 1;
+margin-top: -60px;
+    }
+    nav {
+background-color: rgb(95, 93, 93);
+height: 60px;
+margin-top: 0%;
+text-align: center;
+border: 1px solid black;
+margin-left: -7px;
+border-radius: 10px;
+width: 80%;
+    }
+    .aside1 {
+background-color: rgb(4, 0, 255);
+width: 20%; float: right;
+height: 350px;
+margin-top: 30px;
+font-size: 26px;
+margin-right: 5%;
+color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .article1 {
+float: left;
+background-color: rgb(255, 0, 0);
+width: 20%;
+height: 350px;
+margin-top: -400px;
+align-items: center;
+margin-left: 5%;
+font-size: 26px;
+color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 10px;
+ }
+body{
+background-image: repeating-linear-gradient(to left,red,blue);
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+}
+.sites {
+    margin-top: auto;
+    width:auto;
+}
+footer {
+background-image: url(giphy.gif) ;
+margin-top: 40px;
+margin-bottom: -40px;
+margin-left: -4%;
+width: 104.4%;
+overflow: hidden;
+height: 60px;
+}
+.lista {
+    text-align: center;
+    text-decoration: none;
+    margin-top: -100px;
+    width: 100px;
+    margin-left: -50px;
+    list-style: none;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+    text-decoration-style: none;
+    background-color:grey;
+        margin-top: 2px;
+        border: 1px solid black;
+border-radius: 3px;
+        padding-bottom: 27px;
+        color: black;
+        text-decoration: none;
+}
+</style>
+
+<footer></footer>
+</html>
+</body>

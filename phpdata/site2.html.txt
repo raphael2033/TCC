@@ -1,0 +1,29 @@
+<html lang="pt-br">
+<head>
+<title>  Curriculo </title>
+<body> 
+<head/>
+<li>Nome do candidato: Raphael Salvador ELias</li>
+<li>Idade: 15</li>
+<li>habilidades: conhecimento de informatica e T.I e um pouco de empatia :)</li>
+<li>nivel de curso: acadêmica</li>
+
+<li>sabe utilizar: python,html,css,javascript,visualg e animador </li>
+<li>2 colheres (chá) de fermento em pó</li>
+
+<li>nota do candidato: ola bom dia, gostaria de trabalhar neste local </li>
+<li>Manteiga e farinha de trigo para untar e polvilhar a forma </li>
+<li> Açúcar de confeiteiro para polvilhar</li>
+</ul>
+
+
+
+
+
+
+ </body>
+<body> 
+<li> tambem veja nosso novo produto! <li/>
+<img src = " C:\Users\RaphaelSalvadorElias\Desktop\site\gif.gof">
+<body/>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<body onload="draw();">
+<canvas id="canvas" width="500" height="250"></canvas>
+<script>
+var pincel = document.getElementById('canvas').getContext('2d');
+pincel.moveTo (100, 25); pincel.lineWidth = 2; pincel.lineTo (250, 35); pincel.lineTo (325, 100); pincel.moveTo (150, 100); pincel.lineTo (105, 25);
+pincel.lineTo (325, 100); pincel.closePath();
+pincel.fillStyle = "#C81E1E"; pincel.fill();
+pincel.moveTo (100, 25); pincel.lineTo (30, 100)
+pincel.moveTo (200, 100); pincel.lineTo (30, 100)
+pincel.moveTo (30,100); pincel.lineTo (30, 200)
+pincel.fillStyle = "cyan"; pincel.fillRect(80, 54, 40, 40);
+pincel.moveTo (30,200); pincel.lineTo (200, 200)
+pincel.moveTo (250,120); pincel.lineTo (217, 120) 
+pincel.moveTo (217,150); pincel.lineTo (250, 120) 
+pincel.fillStyle = "blue"; pincel.fillRect(217, 120, 33, 30);
+pincel.moveTo (250,150); pincel.lineTo (250, 120) 
+pincel.moveTo (250,150); pincel.lineTo (217, 150) 
+pincel.moveTo (250,150); pincel.lineTo (217, 120) 
+pincel.moveTo (217,150); pincel.lineTo (217, 120) 
+pincel.moveTo (30,200); pincel.lineTo (200, 200)
+pincel.moveTo (150, 100); pincel.lineTo (150, 200); pincel.lineTo (325, 200); pincel.lineTo(325, 100);
+pincel.closePath(); pincel.stroke();
+pincel.fillStyle = "red"; pincel.fillRect(62, 124, 40, 75);
+</script>
+<style>
+    script{
+        width: 1000px;
+        height: 1000px;
+
+    }
+</style>
+</body>
+</html>
