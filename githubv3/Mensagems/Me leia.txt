@@ -1,0 +1,5 @@
+Nota deixada pelo Raphael, lembre deixar os arquivos php no xamp, exatamente no htdocs, o caminho geralmente é  C:\xampp\htdocs\
+deixe tudo la e execute esse url no navegador local
+http://localhost/phpmyadmin/index.php?route=/database/sql&db=tcc
+http://localhost/mensagems/login.php
+http://localhost/mensagems/comentario.php
