@@ -50,44 +50,32 @@
 </article>
  <aside> 
 
-<form action="home.php" method="post" autocomplete="off">
-<input id="Nome" name="Nome" type="text" required>
-<input id="Data" name="Data" type="date" required>
+<form action="home.php" method="POST" autocomplete="on">
+<input id="Nome" name="Nome" type="text" >
+<input id="Data" name="Data" type="date">
 <input type="submit">
 </form>
 
  
  <?php 
  include("connex.php");
- if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
- $Nome = $_POST["Nome"];
- $Data = $_POST["Data"];
-
-
- $query = "INSERT INTO agenda (Nome, Data) VALUES ('$Nome', '$Data')";
-
- try {
-     // Execute the query
-     $resultado = mysqli_query($conexao, $query);
-     if ($resultado) {
-         echo '<div class="alert1">Comentario feito: </div>';
-     }
- } catch (mysqli_sql_exception $e) {
-     // Check if the error is due to a duplicate entry
-     if ($e->getCode() == 1062) { // 1062 is the MySQL error code for duplicate entry
-         echo '<div class="alert2">Erro: Horario já está marcado.</div>';
-     } else {
-         echo '<div class="alert2">Erro ao inserir os dados: ' . $e->getMessage() . '</div>';
-     }
- }
-
-
-
-
+ $Nome = $_POST ["Nome"];
+ $Data = $_POST ["Data"];
+ $query = "insert into agenda (Nome,Data) values ('$Nome','$Data')";
+ $resultado = mysqli_query($conexao, $query);
+ if ($resultado == 1)
+ {
+  ?> 
+  <div class="alert1" > 
+    Comentario feito: </div>
  
- header("Location: " . $_SERVER['PHP_SELF']);
- exit();
-}
+  <?php 
+ } else {
+  ?>
+ 
+ <div class="alert2" >Erro: usuario já esta estabelecido </div>
+ <?php
+ }
 
  $resultado = mysqli_query($conexao, "SELECT * FROM agenda");
  while ($row = mysqli_fetch_array($resultado))
@@ -126,6 +114,7 @@
 
  </aside>
 
+<a class="voltar" id="Voltar">return</a>
 <footer>
     <div class="contfoot">
 
@@ -138,6 +127,5 @@
 </nav>
 </footer>
 
-<a href="home.php" class="voltar" id="Voltar">return</a>
 </body>
 </html>
