@@ -1,0 +1,64 @@
+/*carrinho de compras*/
+
+.abrircarrinho{
+    float: right;
+    margin-right: 40px;
+}
+
+.cor{
+    transition: all 1.5s;
+    height: 50px;
+    width: 55px;
+    background-color: rgb(0, 47, 255);
+    border:1px rgb(0, 47, 255) solid;
+}
+
+.cor:hover{
+    border-radius:50% ;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 47, 255);
+    box-shadow: inset 100px 00px 00px rgb(0, 255, 0);
+}
+
+
+.carcor{
+    align-content: center;
+    transition: all 0.7s;
+}
+.carcor:hover{
+    filter: invert(1);
+}
+
+input[type=checkbox]{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+.dentro{
+    display: none;
+}
+input:valid ~ .dentro{
+    background-color: white;
+    display: block;
+    list-style-type:none ;
+    border: 2px black solid;
+    margin-top: 5px;
+}
+
+
+.comprar{
+    background-color: rgb(0, 255, 42);
+}
+.carrinho{
+    background-color: red;
+}
+#botoes{
+    width: 150px;
+    margin: 15px;
+   display: block;
+   margin-left: 32%;
+   text-align: center;
+}
+
+
+/*fim carrinho de compras*/
