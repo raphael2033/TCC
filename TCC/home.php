@@ -12,16 +12,16 @@
         <nav>
             <div class="links2">
                                 <div class="sitemex">
-                                    <a href="home.html"><il class="sites">Home</il></a>
-                                    <a href="empresa.html"><il class="sites">Empresa</il></a>
-                                    <a href="produtos.html"><il class="sites">Produtos</il></a>
+                                    <a href="home.php"><il class="sites">Home</il></a>
+                                    <a href="empresa.php"><il class="sites">Empresa</il></a>
+                                    <a href="produtos.php"><il class="sites">Produtos</il></a>
                                     </div>
                                 </div>
                             
                         </nav>
         <header>
 
-            <a href="home.html"><img src="CANAL-removebg-preview.png" id="logo1" height="10%" width="10%"></a>
+            <a href="home.php"><img src="CANAL-removebg-preview.png" id="logo1" height="10%" width="10%"></a>
         </header>
 
 
@@ -50,11 +50,6 @@
 </article>
  <aside> 
 
-<form action="home.php" method="post" autocomplete="off">
-<input id="Nome" name="Nome" type="text" required>
-<input id="Data" name="Data" type="date" required>
-<input type="submit">
-</form>
 
  
  <?php 
@@ -94,7 +89,15 @@
  echo"
  <table>
  <tr>
- <td class='mensagems' > $row[Nome] $row[Data] <img class='imgtexto' src='camisa2.png'> </td>
+ <td class='mensagems' > $row[Nome]  </td></table>
+ </tr>
+ <table>
+ <tr class='mensagems'>
+
+ 
+ </tr>
+ </table>
+
  <style>
  .mensagems {
     border: 4px solid;
@@ -112,18 +115,42 @@
 
 
 
+<ul class="horarios">
+   
+<ol class="horariosol"        >08:00 </ol>
+<ol class="horariosol"        >09:00</ol>
+<ol class="horariosol"        >10:00</ol>
+<ol class="horariosol"        >10:30</ol>
+<ol class="horariosol"        >11:00</ol>
+<ol class="horariosol"        >12:00</ol>
+<ol class="horariosol"        >13:00</ol>
+<ol class="horariosol"        >15:00</ol>
+<ol class="horariosol"        >16:00</ol>
+<ol class="horariosol"        >17:00</ol>
+<ol class="horariosol"        >18:00</ol>
+<ol class="horariosol"        >18:30</ol>
+<ol class="horariosol"        >19:00</ol>
+<ol class="horariosol"        >20:00</ol>
+<ol class="horariosol"        >22:00</ol>
+<ol class="horariosol"        >22:30</ol>
+<ol class="horariosol"       >23:30</ol>
+
+</ul>
 
 
-
-
-
-
-
-
-
-
-
-
+<style>
+    .horarios {
+   position: relative   ;
+float: right;
+        top: -37.8%;
+        width: 50px;
+  
+    }
+    .horariosol {
+        border: 4px solid;
+        margin: 2px;
+    }
+</style>
  </aside>
 
 <footer>
