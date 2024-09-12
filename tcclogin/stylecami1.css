@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes cores {
+
+}
+    
+
+.sitemex{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    float: left;
+    background-color: #a93e3e;
+    height:50px;
+    padding-top: 28px;
+    width: 100%;
+    border: 2px black solid;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.sites{
+    position: relative;
+    left: 2%;
+    margin-top: 30px;
+    margin: 3px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.sites:hover{
+background-color:rgb(83, 2, 2, 0.466);
+}
+
+
+
+footer {
+    color:rgb(0, 0, 0);
+    width: 93.4%;
+    margin-left: 0px;
+    position: absolute ;
+    bottom: -1450px;
+    height: 100px;
+    margin-top: 10%;
+    background-color: rgb(172, 114, 114);
+    font-size: 10px;
+    padding: 50px;
+
+}
+.contfoot{
+    border-bottom: 1px black solid;
+    height: 30px;
+}
+#copyright{
+    float: right;
+    
+    margin-right: 30px;
+}
+#logo img{
+size: 10px;
+}
+#navfoot, a{
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: text-decoration 0.5s;
+}
+
+#baixo{
+    margin: 5px;
+}
+#baixo:hover{
+    text-decoration: underline;
+}
+
+/*conteudo*/
+
+.fotos{
+    margin-left:50px ;
+    margin-top: 80px;
+    background-color: white;
+    width: 750px;
+}
+.bordconteudo{
+    background-color: white;
+    border: 2px black solid;
+    width: 40%;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+}
+.conteudo{
+    margin-right: 50px;
+    display: block;
+}
+#butao{
+    text-align: center;
+    margin-left: 40%;
+    font-size: 12px;
+    height: 45px;
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.compre{
+    background-color: yellow;
+    border:2px rgb(255, 255, 255) solid;
+    color: rgb(0, 0, 0);
+}
+.carrinho{
+    background-color:rgb(202, 0, 0) ;
+    border:2px rgb(255, 255, 255) solid;
+    color: white;
+}

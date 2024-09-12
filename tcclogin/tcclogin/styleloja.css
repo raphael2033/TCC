@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes cores {
+
+}
+    
+
+.banner {
+    background-color: rgb(172, 114, 114);
+    width: 100%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.links2{
+    background-color: rgba(169, 62, 62);
+    height: 50px;
+width: 100%;
+box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+border: solid 2px;
+
+position: sticky;
+bottom: 100%;
+}
+
+#logo1{
+    margin: 15px;
+    position: absolute;
+    left: 38%;
+    top:95px;
+    height: 250px;
+    width: 400px;
+}
+
+.titulo {
+position: absolute;
+font-size: 36px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sitemex{
+    position: absolute;
+    top: 0%;
+    right: 10%;
+}
+
+.sites{
+    margin-top: 0px;
+    margin: 3px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+
+/*botao bunito*/
+button {
+    height: 50px;
+    text-decoration: none;
+    color: #000000;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ff000000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #57000080;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #3030302f;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+
+  /*fim botao bunito*/
+
+article {
+
+    
+    text-align: center;
+}
+.caixote{
+    margin-top: 250px;
+    margin-bottom: 100px;
+    background-color: rgb(22, 22, 22);
+}
+.caixa{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+}
+.produtos{
+    display: inline;
+    height: 25%;
+    width: 25%;
+    border-radius: 10px;
+    background-color: rgba(110, 47, 47, 0.795);
+    margin: 9px;
+    
+}
+.produtos{
+    height: 25%;
+    width: 25%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.produtos:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(255, 0, 0, 0.35) 0px 5px 15px;
+}
+.teste{
+    position: relative;
+    font-size: 130%;
+    color: rgba(255, 255, 255, 0.973);
+    top: 15px;
+}
+
+/*carrinho de compras*/
+
+.abrircarrinho{
+    float: right;
+    margin-right: 40px;
+}
+input[type=checkbox]{
+    height: 50px;
+    width: 50px;
+    background-image: url(carrinho.png);
+}
+
+
+.comprar{
+    background-color: rgb(0, 255, 42);
+}
+.carrinho{
+    background-color: red;
+}
+#botoes{
+    width: 150px;
+    margin: 15px;
+   display: block;
+   margin-left: 30%;
+   text-align: center;
+}
+
+
+/*fim carrinho de compras*/
+
+.programação{
+    position: absolute;
+    top: 450px;
+    margin: 50px;
+    border-bottom:2px black dashed;
+}
+
+footer {
+    color:rgb(0, 0, 0);
+    width: 95.7%;
+    margin-left: 0px;
+    position: absolute ;
+    bottom: -1200px;
+    height: 100px;
+    margin-top: 10%;
+    background-color: rgb(172, 114, 114);
+    font-size: 10px;
+    padding: 50px;
+
+}
+@media (min-width: 600px) {
+    .footer {
+      width: 100%;
+    }
+  }
+.contfoot{
+    border-bottom: 1px black solid;
+    height: 30px;
+}
+#copyright{
+    float: right;
+    
+    margin-right: 30px;
+}
+#logo img{
+size: 10px;
+}
+#navfoot, a{
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: text-decoration 0.5s;
+}
+
+#baixo{
+    margin: 5px;
+}
+#baixo:hover{
+    text-decoration: underline;
+}
+
+aside {
+
+height: 800px;
+width: 800px;}
+.center1 {
+    background-color: red;
+    width: 80%;
+
+}
+.imagem2 {
+    height: 200px;
+    width: 400px;
+}
+
+
+/*tentando responsibilidade*/
+
+@media (max-width: 1000px){
+    .banner{
+        width: 100%;
+    }
+    .links2{
+        height: 100px;
+    }
+    #logo1{
+        height: 150px;
+        width: 200px;
+    }
+    .caixa1{
+        width: 50%;
+        height: 50%;
+        padding: 10%;
+    }
+
+    #noticia{
+        font-size: 20px;
+    }
+
+    #thumb{
+        height: 30%;
+        width: 30%;
+    }
+
+    footer{
+        width: 90%;
+    }
+    #navfoot{
+        font-size: 20px;
+    }
+}

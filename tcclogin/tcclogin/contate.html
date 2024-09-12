@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <form action="https://formsubmit.co/caua.likefish@gmail.com" method="POST">
+        <div class="card" id="contatos">
+        <div class="card-cont">
+            <div class="card-top">
+                <img class="imglogin" src="" alt="">
+                <h2 class="title">Mande uma mensagem</h2>
+            </div>
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required />
+        </div>
+        <div class="card-cont">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Digite seu endereço de email" required />
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+        <div class="card-cont">
+            <textarea name="message" placeholder="Escreva sua mensagem aqui" required></textarea>
+            <input type="hidden" name="_next" value="http://localhost/tcclogin/home.php">
+
+
+            <input type="submit" placeholder="Enviar">
+        </div>
+    </div>
+    </form>
+
+</body>
+</html>
