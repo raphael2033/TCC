@@ -6,6 +6,9 @@
 body {
     background-color: rgb(230, 230, 230);
 font-family: Arial, Helvetica, sans-serif;
+display: flex;
+flex-direction: column;
+width: 100%;
 }
 @keyframes cores {
 
@@ -33,9 +36,9 @@ bottom: 100%;
 
 #logo1{
     margin: 15px;
-    position: absolute;
-    left: 38%;
-    top:95px;
+
+    margin-left: 38%;
+    margin-top:95px;
     height: 250px;
     width: 400px;
 }
@@ -131,12 +134,10 @@ article {
 /*carrinho de compras*/
 
 .abrircarrinho{
-    float: right;
+    left: 10px;
     margin-right: 40px;
 }
-label{
-    
-}
+
 
 .carcor{
     align-content: center;
@@ -240,10 +241,6 @@ size: 10px;
     text-decoration: underline;
 }
 
-aside {
-
-height: 800px;
-width: 800px;}
 .center1 {
     background-color: red;
     width: 80%;
@@ -254,26 +251,90 @@ width: 800px;}
     width: 400px;
 }
 
+/*carrinho de compras*/
+.abrircarrinho{
+    float: right;
+    margin-right: 40px;
+}
+.cor{
+    transition: all 1.5s;
+    height: 50px;
+    width: 55px;
+    background-color: rgb(0, 47, 255);
+    border:1px rgb(0, 47, 255) solid;
+}
+.cor:hover{
+    border-radius:50% ;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 47, 255);
+    box-shadow: inset 100px 00px 00px rgb(0, 255, 0);
+}
+.carcor{
+    align-content: center;
+    transition: all 0.7s;
+}
+.carcor:hover{
+    filter: invert(1);
+}
+input[type=checkbox]{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+.dentro{
+    display: none;
+}
+input:valid ~ .dentro{
+    background-color: white;
+    display: block;
+    list-style-type:none ;
+    border: 2px black solid;
+    margin-top: 5px;
+}
+.comprar{
+    background-color: rgb(0, 255, 42);
+}
+.carrinho{
+    background-color: red;
+}
+#botoes{
+    width: 150px;
+    margin: 15px;
+   display: block;
+   margin-left: 32%;
+   text-align: center;
+}
+/*fim carrinho de compras*/
+
 
 /*tentando responsibilidade*/
 
 @media (max-width: 1000px){
+    body{
+        width: 100%;
+    }
     .banner{
         width: 100%;
     }
     .links2{
         height: 100px;
     }
+
     #logo1{
         height: 150px;
         width: 200px;
+        margin-left: 110px;
+        margin-top: 140px;
     }
     .caixa1{
         width: 50%;
         height: 50%;
-        padding: 10%;
+        padding: 0%;
     }
-
+    #roup{
+        width: 50%;
+        height: 40%;
+    }
     #noticia{
         font-size: 20px;
     }
@@ -282,9 +343,18 @@ width: 800px;}
         height: 30%;
         width: 30%;
     }
-
+    #botoes{
+        width: 50%;
+        height: 70%;
+        font-size: 80%;
+        color: #00000000;
+    }
+    .comprar{
+        background-image: url("carrinho.png");
+    }
     footer{
-        width: 90%;
+        width: 75%;
+
     }
     #navfoot{
         font-size: 20px;
