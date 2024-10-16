@@ -17,6 +17,7 @@ if ($conn->connect_error) {
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $titulo = $_POST['titulo'];
     $noticia = $_POST['noticia'];
+    $data_envio = $_POST['data_envio'];
 
     // Processa o upload da imagem
     $target_dir = "uploads/"; // Certifique-se de que esta pasta exista e tenha permissões de escrita
@@ -63,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "O arquivo " . htmlspecialchars(basename($_FILES["imagem"]["name"])) . " foi enviado.";
 
             // Salva os dados no banco de dados
-            $sql = "INSERT INTO sua_tabela (titulo, noticia, imagem) VALUES ('$titulo', '$noticia', '$target_file')";
+            $sql = "INSERT INTO sua_tabela (titulo, noticia, imagem, data_envio) VALUES ('$titulo', '$noticia', '$target_file', '$data_envio')";
             if ($conn->query($sql) === TRUE) {
                 echo "Registro salvo com sucesso.";
             } else {

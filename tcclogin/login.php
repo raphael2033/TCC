@@ -28,7 +28,7 @@ if(isset($_POST['email']) && isset($_POST['senha'])) {
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['nome'] = $usuario['nome'];
 
-            header("Location:home.php");
+            header("Location:enviarnoticia.php");
 
         } else {
             echo "Falha ao logar! E-mail ou senha incoreetos";
@@ -47,6 +47,9 @@ if(isset($_POST['email']) && isset($_POST['senha'])) {
     <title>Document</title>
 </head>
 <body>
+
+<h1><p>Bem vindo de volta</p>
+<p><a href="home.php"><img src="CANAL-removebg-preview.png" height="10%" width="10%" ></a></p></h1>
     <div id="borda">
             <form class="form" method="POST" action="">
                 <div class="card">
@@ -65,11 +68,16 @@ if(isset($_POST['email']) && isset($_POST['senha'])) {
                     <div class="card-cont">
                         <input type="submit" value="Entrar">
                     </div>
+                    <div class="card-cont">
+                    <a href="cadastro.html">Não tem uma conta cadastre-se</a>
+                    </div>
                 </div>
             </form>
+            
         </div>
-
+       
     </div>
+</div>
     <script src="https://cdn.jsdelivr.net/gh/brunoalbim/devtools-detect/index.js"></script>
 <script>
 if (window.devtools.isOpen === true) {

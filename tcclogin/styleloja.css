@@ -156,7 +156,6 @@ article {
     background-color: red;
     border-radius: 20px;
 }
-
 input[type=checkbox]{
     height: 50px;
     width: 50px;
@@ -170,13 +169,33 @@ input:valid ~ .dentro{
     display: block;
     list-style-type:none ;
 }
-
+ul{
+    width: 250px;
+}
 
 .comprar{
     background-color: rgb(0, 255, 42);
 }
+#comprar{
+    position: relative;
+    left: 120px;
+    top:18px;
+    border: grey 1px solid;
+    background-color: rgb(0, 255, 85);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#limpar{
+    border: grey 1px solid;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
 .carrinho{
     background-color: red;
+    border-radius: 25px ;
+    text-decoration: none;
+    color: #000000;
 }
 #botoes{
     width: 150px;
@@ -200,8 +219,7 @@ footer {
     color:rgb(0, 0, 0);
     width: 95.7%;
     margin-left: 0px;
-    position: absolute ;
-    bottom: -1200px;
+
     height: 100px;
     margin-top: 10%;
     background-color: rgb(172, 114, 114);
@@ -226,7 +244,7 @@ footer {
 #logo img{
 size: 10px;
 }
-#navfoot, a{
+#navfoot a{
     margin: 5px;
     text-decoration: none;
     color: black;
@@ -326,6 +344,15 @@ input:valid ~ .dentro{
         margin-left: 110px;
         margin-top: 140px;
     }
+    .produtos{
+        min-height: 250px;
+        margin: 2px;
+    }
+    .teste{
+        font-size: 20px;
+        height: 100px;
+        text-decoration: none;
+    }
     .caixa1{
         width: 50%;
         height: 50%;
@@ -346,7 +373,7 @@ input:valid ~ .dentro{
     #botoes{
         width: 50%;
         height: 70%;
-        font-size: 80%;
+        font-size: 10px;
         color: #00000000;
     }
     .comprar{

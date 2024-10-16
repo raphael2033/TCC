@@ -1,18 +1,17 @@
 body{
-    background-color: whitesmoke;
+    background: linear-gradient(90deg, rgba(169,62,62,1) 0%, rgba(230,230,230,1) 100%);;
 }
+
 .card{
-    margin: 10% 0 0 45%;
+    margin: 0% auto;
     border: 1px black solid;
-    border-radius: 15px;
     background-color: white;
-    width:250px;
-    height: 170px;
+    max-width:500px;
+    max-height: 1000px;
     text-align: center;
 }
 .card-top{
-    background-color: rgba(169, 62, 62);
-    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
 }
 .title{
     position: relative;
@@ -22,10 +21,27 @@ body{
     margin: 10px;
 }
 
+input[value=Entrar]{
+    border-radius: 40px;
+    background-color:rgba(169, 62, 62) ;
+    width: 100px;
+
+}
 /*contatos*/
 
 #contatos{
     width: 300px;
     height: 205px;
     margin: 10% 0 0 43%;
+    position: relative;
+    bottom: 100px;
+}
+
+@media (max-width:1000px){
+    .card{
+        margin:auto;
+    }
+    #contatos{
+        margin: auto;
+    }
 }

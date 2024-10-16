@@ -54,6 +54,14 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     transition: all 0.1s ease-in-out;
 }
+.postar{
+    
+}
+#seta{
+    transform: rotate(180deg);
+    position: relative;
+    right: 4px;
+}
 /*botao bunito*/
 button {
     height: 50px;
@@ -101,12 +109,17 @@ article{
     padding: 10px;
     transition: all 0.2s ease-in-out;
 }
+#titulo{
+    min-width: 200px;
+    font-size: large;
+}
 #noticia{
     position: relative;
     top: 20px;
-    right: 90px;
+    right: 0px;
     font-size: 17px;
     margin: 10px;
+    float: right;
 }
 .caixa1:hover{
     color: red;
@@ -250,6 +263,9 @@ size: 10px;
         margin-left: 110px;
         margin-top: 140px;
     }
+    .postar{
+display: none;
+    }
     aside p{
         position: relative;
         left: 15px;
@@ -269,6 +285,8 @@ size: 10px;
         height: 50%;
         padding: 15%;
         display: block;
+        max-height:1000px;
+        overflow:auto;
     }
     #noticia{
         font-size: 20px;

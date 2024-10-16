@@ -25,12 +25,12 @@
                                     <a href="empresa.php"><button><il class="sites">Empresa</il></button></a>
                                     <a href="produtos.php"><button><il class="sites">Produtos</il></button></a>
                                     <a href="login.php"><button><il class="sites">Logue-se</il></button></a>
-                                    </div>
+                                </div>
                                 </div>
                             
                         </nav>
 
-                                    <a href="enviarnoticia.php"><button>Postar noticia</button></a>
+                                    <a href="login.php" ><button class="postar">Postar noticia <img id="seta" src="setano.png" height="100%" width="100%"></button></a>
 <article>
 <?php
 // Configurações do banco de dados
@@ -48,7 +48,7 @@ if ($conn->connect_error) {
 }
 
 // Consulta SQL
-$sql = "SELECT titulo, noticia, imagem FROM sua_tabela";
+$sql = "SELECT titulo, noticia, imagem, data_envio FROM sua_tabela";
 $result = $conn->query($sql);
 
 // Verifica se há resultados
@@ -60,8 +60,9 @@ if ($result->num_rows > 0) {
             echo "<div class='caixa1'>";
             echo "<img id='thumb'src='" . htmlspecialchars($row["imagem"]) . "' alt='" . htmlspecialchars($row["titulo"]) . "' style='max-width: 300px;'><br>";
         }
-        
-        echo "<h2>" . htmlspecialchars($row["titulo"]) . "</h2>";
+
+        echo "<strong><p id='titulo'>" . htmlspecialchars($row["titulo"]) . "</p></strong>";
+        echo "<p id='data_envio'>" . htmlspecialchars($row["data_envio"]) . "</p>";
         echo "<p id='noticia'>" . htmlspecialchars($row["noticia"]) . "</p>";
         echo "</div>";
     }
