@@ -1,0 +1,321 @@
+
+body.dark-mode {
+    background-color: #997575;
+    color: #ffffff;
+}
+.banner.dark-mode{
+    background-color: #3f3e3e;
+}
+
+nav.dark-mode, footer.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.produtos.dark-mode {
+    background-color: #c50101;
+    border: 1px solid #555;
+}
+.noticia.dark-mode {
+    background-color: #333;
+    color: #ffff;
+}
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+.contfoot{
+    color: white;
+}
+
+
+
+body.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+
+}
+
+.banner.dark-mode {
+    background-color: #333;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.links2.dark-mode{
+    background-color: black;
+    color: #ffffff;
+ 
+box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+/*botao bunito*/
+button.dark-mode {
+
+    text-decoration: none;
+    background-color: rgb(15, 10, 10);
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ff000000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #57000080;
+  }
+  button:hover {
+    color: aliceblue;
+    box-shadow: inset 0 -100px 0 0 #3030302f;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+.programação{
+    position: absolute;
+    margin: 50px;
+    border-bottom:2px black dashed;
+}
+.progbord.dark-mode{
+    background-color: black;
+    color: #ffffff;
+    height: 100px;
+}
+/*Parte das noticias*/
+.postar{
+    width: 100px;
+}
+.postarhref{
+    width: 100px;
+}
+article.dark-mode{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: #080707;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    float: left;
+
+    top: 400px;
+}
+
+
+.caixa1.dark-mode{
+    border-bottom: 1px rgb(39, 39, 39) solid;
+    display: block;
+    min-height: 210px;
+    width: 800px;
+    margin: 50px;
+    border-radius: 7px;
+    background-color: rgb(66, 66, 66);
+    color: #ffffff;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    overflow: auto;
+}
+#titulo{
+    min-width: 300px;
+    font-size: large;
+}
+#noticia{
+    position: relative;
+    top: 20px;
+    right: 0px;
+    font-size: 17px;
+    margin: 10px;
+    float: left;
+}
+#autor{
+    font-size: small;
+}
+.caixa1:hover{
+    
+    position: relative;
+    bottom: 3px;
+    box-shadow:  00px 11px 15px 2px rgba(128, 128, 128, 0.389);
+}
+
+
+/*Programação*/
+
+aside.dark-mode{
+    right: 0px;
+    border: 1px solid rgb(12, 0, 0);
+    position: absolute;
+    top:500px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(26, 19, 19);
+    color: #ffffff;
+    background-color: #020202
+}
+.mensagems{
+    position: relative;
+    top: 50px;
+    margin: 1px;
+    width: 160px;
+}
+.horarios {
+    position: relative   ;
+ float: right;
+         width: 50px;
+         top:-379px;
+     }
+     .horariosol {
+ 
+         margin: 7.5px;
+     }
+
+
+
+/*fim programação */
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*footer*/
+
+footer.dark-mode {
+
+    width: 95.7%;
+    margin-left: 0px;
+
+    height: 100px;
+    margin-top: 10%;
+    background-color: #3f3e3e;
+    color: black;
+    font-size: 10px;
+    padding: 50px;
+
+}
+
+.contfoot{
+    border-bottom: 1px black solid;
+    height: 30px;
+}
+#copyright{
+    float: right;
+    
+    margin-right: 30px;
+}
+#logo img{
+size: 10px;
+}
+#navfoot, a{
+    margin: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    transition: text-decoration 0.5s;
+}
+
+#baixo{
+    margin: 5px;
+}
+#baixo:hover{
+    text-decoration: underline;
+}
+
+/*Historia da Empresa*/
+.historiadotrabalho{
+    font-size: large;
+    margin-top: 20px;
+    width: 80%;
+}
+
+
+
+/*termos de condição */
+.termotitle.dark-mode{
+    margin:auto;
+    font-size: 100px;
+}
+.caixadetermos.dark-mode{
+    margin: auto;
+    width: 800px;
+    border: 1px grey solid;
+    border-radius: 10px;
+    background-color: black;
+    color: #ffffff; }
+.termos{
+    margin: 7px;
+    font-size: large;
+}
+@media (max-width: 1000px){
+    .termotitle{
+        font-size: 150%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .caixadetermos{
+        width: 100%;
+    }
+    .termos{
+        margin-bottom: 20px;
+    }
+}
+
+/*tentando responsibilidade*/
+@media.dark-mode (max-width: 1000px){
+    .banner{
+        width: 100%;
+    }
+
+    #logo1{
+        height: 150px;
+        width: 200px;
+        margin-left: 110px;
+        margin-top: 140px;
+    }
+    .postar{
+display: none;
+    }
+    aside p{
+        position:relative;
+        right: 15px;
+    }
+    .mensagems{
+        position: relative;
+        left: 10px;
+    }
+    .horarios{
+        margin-right: 12px;
+    }
+            article{
+        margin-top: 610px;
+    }
+    .caixa1{
+        width: 50%;
+        height: 50%;
+        padding: 15%;
+        display: block;
+        max-height:1000px;
+    }
+    #noticia{
+        font-size: 20px;
+        margin: -20px;
+        left: 20px;
+        font-weight: normal;
+    }
+    #thumb{
+        height: 200px;
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+        margin-left: 0px;
+    }
+
+    #navfoot.dark-mode{
+        background-color: #3f3e3e;
+        font-size: 20px;
+    }
+    .sites.dark-mode {
+        background-color: #333;
+        color: white ;
+
+    }
+}
+
+

@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+.banner {
+    background-color: rgb(172, 114, 114);
+    width: 100%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.links2{
+    background-color: rgba(169, 62, 62);
+    height: 50px;
+width: 100%;
+box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+border: solid 2px;
+position: absolute;
+top: 0px;
+}
+#logo1{
+    margin: 15px;
+
+    margin-left: 38%;
+    margin-top:95px;
+    height: 250px;
+    width: 400px;
+}
+.logo2{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.titulo {
+position: absolute;
+font-size: 36px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sitemex{
+    position: absolute;
+    top: 0%;
+    right: 10%;
+}
+.sites{
+    margin-top: 0px;
+    margin: 3px;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+}
+.postar{
+    
+}
+#seta{
+    transform: rotate(180deg);
+    position: relative;
+    right: 4px;
+}
+/*botao bunito*/
+button {
+    height: 50px;
+    text-decoration: none;
+    color: #000000;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ff000000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #57000080;
+  }
+  button:hover {
+    color: aliceblue;
+    box-shadow: inset 0 -100px 0 0 #3030302f;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+.programação{
+    position: absolute;
+    margin: 50px;
+    border-bottom:2px black dashed;
+}
+.progbord{
+    border: 1px black solid;
+    height: 100px;
+}
+/*Parte das noticias*/
+.postar{
+    width: 100px;
+}
+.postarhref{
+    width: 100px;
+}
+article{
+    background-color: aliceblue;
+    border: 1px solid black;
+    float: left;
+    margin-top: 20px;
+    top: 400px;
+}
+.caixa1{
+    border-bottom: 1px rgb(39, 39, 39) solid;
+    display: block;
+    min-height: 210px;
+    width: 800px;
+    margin: 50px;
+    border-radius: 7px;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    overflow: auto;
+}
+#titulo{
+    min-width: 300px;
+    font-size: large;
+}
+#noticia{
+    position: relative;
+    top: 20px;
+    right: 0px;
+    font-size: 17px;
+    margin: 10px;
+    float: left;
+}
+.caixa1:hover{
+    
+    position: relative;
+    bottom: 3px;
+    box-shadow:  00px 11px 15px 2px rgba(128, 128, 128, 0.389);
+}
+#thumb{
+    height: 400px;
+    width: 900px;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+/*Programação*/
+
+aside{
+    right: 0px;
+    border: 1px solid rgb(12, 0, 0);
+    position: absolute;
+    top:500px;
+    width: 400px;
+    height: 500px;
+    color: rgb(0 0 0);
+    background-color: #ac7272
+}
+.mensagems{
+    position: relative;
+    top: 50px;
+    margin: 1px;
+    width: 160px;
+}
+.horarios {
+    position: relative   ;
+ float: right;
+         width: 50px;
+         top:-379px;
+     }
+     .horariosol {
+ 
+         margin: 7.5px;
+     }
+
+
+
+/*fim programação */
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*footer*/
+
+footer {
+    color:rgb(0, 0, 0);
+    width: 95.7%;
+    margin-left: 0px;
+
+    height: 100px;
+    margin-top: 10%;
+    background-color: rgb(172, 114, 114);
+    font-size: 10px;
+    padding: 50px;
+
+}
+
+.contfoot{
+    border-bottom: 1px black solid;
+    height: 30px;
+}
+#copyright{
+    float: right;
+    
+    margin-right: 30px;
+}
+#logo img{
+size: 10px;
+}
+#navfoot, a{
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: text-decoration 0.5s;
+}
+
+#baixo{
+    margin: 5px;
+}
+#baixo:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/*termos de condição */
+.termotitle{
+    margin:auto;
+    font-size: 100px;
+}
+.caixadetermos{
+    margin: auto;
+    width: 800px;
+    border: 1px grey solid;
+    border-radius: 10px;
+    background-color:white ;
+}
+.termos{
+    margin: 7px;
+    font-size: large;
+}
+@media (max-width: 1000px){
+    .termotitle{
+        font-size: 150%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .caixadetermos{
+        width: 100%;
+    }
+    .termos{
+        margin-bottom: 20px;
+    }
+}
+
+/*tentando responsibilidade*/
+@media (max-width: 1000px){
+    .banner{
+        width: 100%;
+    }
+    .links2{
+        height: 100px;
+    }
+    #logo1{
+        height: 150px;
+        width: 200px;
+        margin-left: 110px;
+        margin-top: 140px;
+    }
+    .postar{
+display: none;
+    }
+    aside p{
+        position: relative;
+        left: 15px;
+    }
+    .mensagems{
+        position: relative;
+        left: 10px;
+    }
+    .horarios{
+        margin-right: 12px;
+    }
+    article{
+        margin-top: 610px;
+    }
+    .caixa1{
+        width: 50%;
+        height: 50%;
+        padding: 15%;
+        display: block;
+        max-height:1000px;
+    }
+    #noticia{
+        font-size: 20px;
+        margin: -20px;
+        left: 20px;
+        font-weight: normal;
+    }
+    #thumb{
+        height: 200px;
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+        margin-left: 0px;
+    }
+    footer{
+        width: 75%;
+
+    }
+    #navfoot{
+        font-size: 20px;
+    }
+}
